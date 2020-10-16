@@ -1,0 +1,109 @@
+// Here you can add other styles
+:root {
+    --themePrimary:#5C3A82;
+    --themesecoundry:#c65729;
+    --grayheader:#f1f1f1;
+    --grayBg:#f9f9f9;
+    --black:#000;
+    --graytext:#4a4a4a;
+    --font-face: 'Montserrat', sans-serif ;
+    --sideBardMenuColor:#95a0b8;
+    --formLabelColor:#77869e;
+    --inputValueColor:#3b4045;
+    // --inputValueColor:#000;
+    --borderRadius:10px;
+    --formFieldBorderColor:#eaeaea;
+}
+body{
+    font-family: var(--font-face) !important;
+    font-weight: 400 !important;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--black);
+    @media only screen and (min-width:1601px){
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+}
+.c-sidebar-purple {
+    background: #6E469B!important; 
+}
+.c-header-dark {
+    background: #000000!important;
+}
+.c-sidebar .c-sidebar-brand {
+    background: #000000!important;
+}
+.dashsidebar {
+    box-shadow: 0px 12px 7px #eaeaf3;
+    border-right: 0 !important;
+    .c-sidebar-brand:focus{
+        outline: 0;
+    }
+    .c-sidebar-minimizer {
+        display: none !important;
+    }
+    &:not(.c-sidebar-minimized){
+        .c-sidebar-nav-item,.c-sidebar-nav-dropdown {
+            .c-sidebar-nav-link{
+                &.c-active,&:hover{
+                    background-color: var(--themePrimary);
+                    color: #ffffff !important;
+                    .c-sidebar-nav-icon{
+                        color: #ffffff !important;
+                    }
+                }
+            }
+            
+        }
+    }    
+}
+// input[type="checkbox"]{
+//     cursor: pointer;
+// }
+// .c-sidebar-brand {
+//     background: #ffffff!important;
+// }
+// .bg-none{
+//     background: none !important;
+// } 
+// .btn-outline-primary {
+//     }
+
+// .badge-danger {
+// }
+// .btn-primary {
+// }
+
+.c-sidebar-lg-show + .c-wrapper .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+ 
+@media screen and (max-width:1440px){
+        
+    .c-sidebar-lg-show + .c-wrapper .truncate_name{
+        max-width: 78px;
+    }
+    .c-sidebar-lg-show + .c-wrapper .truncate_mob{
+        max-width: 88px;
+    }
+    .c-sidebar-lg-show + .c-wrapper .truncate_email{
+        max-width: 135px;
+    }
+    .c-sidebar-lg-show + .c-wrapper .truncate_offenderID{
+        max-width: 71px;
+
+    }
+}
+
+// input{
+//     &[disabled]{
+//         background-color: #e9ecef6e!important;
+//     }
+// }
+.cursor-pointer {
+    cursor: pointer;
+}
